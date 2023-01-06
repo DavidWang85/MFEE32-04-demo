@@ -2200,18 +2200,16 @@ input, select, textarea {
 		}
 
 /* 客製化css */
-.projectImage{
+.projectImage {
 	filter: brightness(0.8)blur(2px);
 	transition: 1s ease-in-out;
 	object-fit: fill;
 	object-position: center center;
 }
-.projectTitle{
+.projectTitle {
 	position: absolute;
 	z-index: 3;
-	/* bottom: -50%; */
-
 }
-.image:hover .projectImage{
+.image:hover .projectImage {
 	filter: brightness(1)blur(0px);
 }
