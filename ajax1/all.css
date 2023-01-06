@@ -1,0 +1,66 @@
+#car{
+    width: 200px;
+    height: 100px;
+    background: green;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    animation: moving 4s linear infinite;
+}
+.wheel{
+    width: 50px;
+    /* 加上動畫 */
+    animation: rotating 1s linear infinite;
+    /* animation-name: rotating;
+    animation-duration: 1s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
+}
+@keyframes rotating{
+    /* from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);} */
+    0%{
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes moving {
+    0% {
+        transform: translateX(0px);
+    }
+
+    25% {
+        transform: translateX(500px);
+    }
+
+    50% {
+        transform: translateX(1000px);
+    }
+
+    100% {
+        transform: translateX(1500px);
+    }
+}
+#leftWheel{
+    position: absolute;
+    top: 75px;
+    left: 20px;
+}
+#rightWheel {
+    position: absolute;
+    top: 75px;
+    right: 20px;
+    transform: translate();
+}

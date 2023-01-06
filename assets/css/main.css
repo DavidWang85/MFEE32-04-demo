@@ -1547,6 +1547,21 @@ input, select, textarea {
 		.image img {
 			display: block;
 			width: 100%;
+			height: 187px;
+		}
+		@media screen and (max-width: 1280px) {
+
+			.image img {
+					height: 359px;
+				}
+
+		}
+		@media screen and (max-width: 256px) {
+
+			.image img {
+				height: 256px;
+			}
+
 		}
 
 		.image.fit {
@@ -2183,3 +2198,20 @@ input, select, textarea {
 			}
 
 		}
+
+/* 客製化css */
+.projectImage{
+	filter: brightness(0.8)blur(2px);
+	transition: 1s ease-in-out;
+	object-fit: fill;
+	object-position: center center;
+}
+.projectTitle{
+	position: absolute;
+	z-index: 3;
+	/* bottom: -50%; */
+
+}
+.image:hover .projectImage{
+	filter: brightness(1)blur(0px);
+}
